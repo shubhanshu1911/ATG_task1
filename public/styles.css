@@ -68,6 +68,7 @@ line-height: 47px;
 color: #FFFFFF;
 
 }
+
 .subHeading{
     /* 142,765 Computer Engineers follow this */
 
@@ -87,3 +88,89 @@ color: #FFFFFF;
 
 
 }
+
+
+.seccontainer{
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    left: 200px;
+    top: 559px;
+}
+
+
+.nav-links-list{
+    list-style-type: none;
+    display: flex;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+.nav-links-list li {
+    margin-right: 20px; /* Adjust the spacing between items */
+    cursor: pointer; /* Add a pointer cursor for better UX */
+}
+.activ-lis {
+    text-decoration: underline;
+}
+.side-nav{
+    padding-left: 400px;
+    padding-bottom: 8px;
+}
+.sub-nav-frame{
+    border-bottom: 2px solid;
+    padding-top: 2px;
+}
+.card-body{
+    padding-top: 0;
+
+}
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid;
+}
+
+.post_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .post_footer .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post_footer .left img {
+    margin-right: 10px; /* Add some spacing between images */
+  }
+  
+  .post_footer .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post_footer .right img {
+    margin-left: 5px; /* Add some spacing between images */
+    margin-right: 5px;
+  }
+  
+.website{
+    position: relative;
+    text-align: center;
+    /* left: 40%; */
+    height: 50px;
+    border:2px solid;
+    border-radius: 21px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+
+
+}
+  
