@@ -36,7 +36,7 @@ function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <a className="dropdown-item" href="/SignUp">
                     Login
                   </a>
                 </li>

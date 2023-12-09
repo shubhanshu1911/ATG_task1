@@ -1,166 +1,222 @@
-.search-bar{
-position: absolute;
-width: 360px;
-height: 42px;
-left: 540px;
-top: 16px;
-
-background: #F2F2F2;
-border-radius: 21px;
-}
-.account{
-position: absolute;
-width: 183px;
-height: 21px;
-left: 1161px;
-top: 27px;
-
-font-family: 'IBM Plex Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-/* identical to box height */
-text-align: right;
-
-color: #2E2E2E;
-}
-.nav{
+/* NAVBAR BAR CSS */
+.nav {
     /* Rectangle */
+    position: absolute;
+    width: 100%;
+    height: 72px;
+    left: 0px;
+    top: 0px;
 
-position: absolute;
-width: 1440px;
-height: 72px;
-left: 0px;
-top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 993px) {
+    .nav {
+        display: none !important;
+    }
+}
+.search-bar {
+    position: absolute;
+    width: 30%;
+    height: 42px;
+    left: 40%;
+    top: 16px;
 
-background: #FFFFFF;
-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
-
+    background: #F2F2F2;
+    border-radius: 21px;
 }
 
-.main{
-position: absolute;
-width: 1440px;
-height: 440px;
-left: 0px;
-top: 72px;
+.account {
+    position: absolute;
+    width: 183px;
+    height: 21px;
+    right: 5%;
+    top: 27px;
 
-background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%);
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+    text-align: right;
 
+    color: #2E2E2E;
 }
-.Heading{
+
+
+
+/* HEADING PART CSS */
+.main {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.mainImage {
+    width: 100%;
+    height: auto;
+}
+
+.Heading {
     /* Computer Engineering */
-
-position: absolute;
-width: 378px;
-height: 47px;
-left: 200px;
-top: 300px;
-
-font-family: 'IBM Plex Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 47px;
-/* identical to box height */
-
-color: #FFFFFF;
-
+    position: absolute;
+    width: 70%;
+    /* Adjust based on your design */
+    max-width: 500px;
+    /* Set a maximum width if needed */
+    height: auto;
+    left: 15%;
+    /* Adjust based on your design */
+    top: 60%;
+    /* Adjust based on your design */
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    /* Adjust based on your design */
+    line-height: 1.2;
+    color: #FFFFFF;
 }
 
-.subHeading{
+.subHeading {
     /* 142,765 Computer Engineers follow this */
-
-position: absolute;
-width: 327px;
-height: 23px;
-left: 200px;
-top: 350px;
-
-font-family: 'IBM Plex Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 23px;
-
-color: #FFFFFF;
-
-
+    position: absolute;
+    width: 70%;
+    /* Adjust based on your design */
+    max-width: 500px;
+    /* Set a maximum width if needed */
+    height: auto;
+    left: 15%;
+    /* Adjust based on your design */
+    top: 72%;
+    /* Adjust based on your design */
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    /* Adjust based on your design */
+    line-height: 1.2;
+    color: #FFFFFF;
 }
 
+/* Media Query for smaller screens */
+@media (max-width: 993px) {
+    .Heading {
+        width: 90%;
+        left: 5%; 
+        font-size: 4vw;
 
-.seccontainer{
+    }
+    .subHeading {
+        width: 80%;
+        left: 5%;
+        font-size: 3vw;
+    }
+}
+
+/* MIDDLE PART CSS */
+.seccontainer {
     width: 80%;
     height: 500px;
-    position: absolute;
-    left: 200px;
-    top: 559px;
+    position: relative;
+    left: 10%;
+    padding-top: 10px;
 }
 
-
-.nav-links-list{
+.nav-links-list {
     list-style-type: none;
     display: flex;
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    padding: 0;
+    margin: 0;
 }
+
 .nav-links-list li {
-    margin-right: 20px; /* Adjust the spacing between items */
-    cursor: pointer; /* Add a pointer cursor for better UX */
+    margin-right: 20px;
+    cursor: pointer;
 }
+
 .activ-lis {
     text-decoration: underline;
 }
-.side-nav{
-    padding-left: 400px;
+
+.side-nav {
+    padding-left: 10%;
     padding-bottom: 8px;
 }
-.sub-nav-frame{
+
+.sub-nav-frame {
     border-bottom: 2px solid;
     padding-top: 2px;
 }
-.card-body{
-    padding-top: 0;
 
+@media (max-width: 993px) {
+    .desk-flex {
+        position: absolute;
+        bottom: 720px;
+        right: 5px;
+        z-index: 1000;
+        background-color: transparent !important;
+        border-color: #FFFFFF;
+    }
+
+    img.group-icon {
+        display: none;
+    }
 }
-.card{
+
+
+/* POSTS SECTION CSS */
+.card-body {
+    padding-top: 0;
+}
+
+.card {
     margin-top: 10px;
     margin-bottom: 10px;
     border: 2px solid;
+    width: 68%
+}
+
+@media (max-width: 993px) {
+    .card {
+        width: 100%
+    }
 }
 
 .post_footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .post_footer .left {
+}
+
+.post_footer .left {
     display: flex;
     align-items: center;
-  }
-  
-  .post_footer .left img {
-    margin-right: 10px; /* Add some spacing between images */
-  }
-  
-  .post_footer .right {
+}
+
+.post_footer .left img {
+    margin-right: 10px;
+    /* Add some spacing between images */
+}
+
+.post_footer .right {
     display: flex;
     align-items: center;
-  }
-  
-  .post_footer .right img {
-    margin-left: 5px; /* Add some spacing between images */
+}
+
+.post_footer .right img {
+    margin-left: 5px;
+    /* Add some spacing between images */
     margin-right: 5px;
-  }
-  
-.website{
+}
+
+.website {
     position: relative;
     text-align: center;
     /* left: 40%; */
     height: 50px;
-    border:2px solid;
+    border: 2px solid;
     border-radius: 21px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -170,7 +226,5 @@ color: #FFFFFF;
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0em;
-
-
 }
-  
+

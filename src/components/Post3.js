@@ -3,7 +3,7 @@ import share from "./images/share.png"
 
 function Post3(props) {
     return (
-        <div className="card" style={{ width: "68%" }}>
+        <div className="card">
             {/* <img src={props.image} className="card-img-top" alt="..." /> */}
             <p style={{ padding: '2px 10px' }}>{props.type}</p>
             <div className="card-body" style={{ paddingTop: '0' }} >
