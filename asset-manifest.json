@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "/ATG_task1/static/js/main.cf8333c5.js",
+    "static/media/main.png": "/ATG_task1/static/media/main.215f195b29c6b345345d.png",
+    "static/media/img2.png": "/ATG_task1/static/media/img2.ec5b1e35a2e430673336.png",
+    "static/media/img3.png": "/ATG_task1/static/media/img3.b28b39ba0efd4aacc854.png",
+    "static/media/img1.png": "/ATG_task1/static/media/img1.f19669400a753849e92d.png",
+    "index.html": "/ATG_task1/index.html",
+    "main.cf8333c5.js.map": "/ATG_task1/static/js/main.cf8333c5.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.cf8333c5.js"
+  ]
+}
